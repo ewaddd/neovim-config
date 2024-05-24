@@ -9,6 +9,7 @@ return {
       typescript = { 'eslint_d' },
       python = { 'pylint' },
       go = { 'golangci-lint' },
+      html = { 'htmllint' }
     }
   end
 }

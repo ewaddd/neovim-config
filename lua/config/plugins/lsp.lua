@@ -11,6 +11,7 @@ return {
     local mason_lspconfig = require('mason-lspconfig')
     local lspconfig = require('lspconfig')
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
     local on_attach = function()
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = 0 })
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = 0 })
@@ -41,5 +42,17 @@ return {
         end,
       }
     })
+
+    local function roundedDocumentation()
+      vim.lsp.handler['textDocument/hover'] = vim.lsp.with(
+        vim.lsp.handlers.hover, { border = 'rounded' }
+      )
+
+      vim.lsp.handler['textDocument/signatureHelp'] = vim.lsp.with(
+        vim.lsp.handlers.signature_help, { border = 'rounded' }
+      )
+    end
+
+    roundedDocumentation()
   end
 }
