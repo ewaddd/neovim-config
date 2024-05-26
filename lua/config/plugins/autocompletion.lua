@@ -21,14 +21,14 @@ return {
       completion = {
         completeopt = 'menu, menuone, noselect'
       },
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered()
+      },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
-      },
-      window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
       },
       mapping = cmp.mapping.preset.insert({
         ['<CR>'] = cmp.mapping.confirm({ behavior = cmp.SelectBehavior.Insert, select = true }),

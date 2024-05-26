@@ -42,17 +42,5 @@ return {
         end,
       }
     })
-
-    local function roundedDocumentation()
-      vim.lsp.handler['textDocument/hover'] = vim.lsp.with(
-        vim.lsp.handlers.hover, { border = 'rounded' }
-      )
-
-      vim.lsp.handler['textDocument/signatureHelp'] = vim.lsp.with(
-        vim.lsp.handlers.signature_help, { border = 'rounded' }
-      )
-    end
-
-    roundedDocumentation()
   end
 }

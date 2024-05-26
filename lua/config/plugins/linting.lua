@@ -8,8 +8,6 @@ return {
       javascript = { 'eslint_d' },
       typescript = { 'eslint_d' },
       python = { 'pylint' },
-      go = { 'golangci-lint' },
-      html = { 'htmllint' }
     }
   end
 }

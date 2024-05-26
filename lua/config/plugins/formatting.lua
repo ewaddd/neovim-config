@@ -9,10 +9,7 @@ return {
         javascript = { 'prettier' },
         typescript = { 'prettier' },
         html = { 'prettier' },
-        css = { 'prettier' },
-        json = { 'prettier' },
         python = { 'isort', 'black' },
-        go = { 'goimports', 'gofumt' },
         lua = { 'stylua' },
       },
       format_on_save = { timeout = 500, lsp_fallback = true }
