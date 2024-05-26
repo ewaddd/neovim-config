@@ -2,3 +2,8 @@
 quote_style = single 
 indent_type = spaces
 indent_size = 2
+
+[*.go]
+quote_style = double 
+indent_type = spaces
+indent_size = 2

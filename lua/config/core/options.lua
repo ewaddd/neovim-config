@@ -9,6 +9,7 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
+
 vim.hlsearch = false
 
 vim.opt.clipboard = 'unnamedplus'
@@ -21,9 +22,7 @@ vim.opt.undofile = true
 
 vim.opt.termguicolors = true
 
--- Global statusline for splits
 vim.opt.laststatus = 3
 
--- Focus on split window
 vim.opt.splitbelow = true
 vim.opt.splitright = true
