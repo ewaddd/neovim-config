@@ -1,9 +1,6 @@
-[*]
-quote_style = single 
-indent_type = spaces
-indent_size = 2
+root = true
 
-[*.go]
+[*]
 quote_style = double 
 indent_type = spaces
 indent_size = 2

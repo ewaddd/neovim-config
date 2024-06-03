@@ -1,6 +1,6 @@
 return {
-  'numToStr/Comment.nvim',
-  event = { 'BufReadPre', 'BufNewFile' },
+  "numToStr/Comment.nvim",
+  event = { "BufReadPre", "BufNewFile" },
   lazy = false,
   opts = {}
   -- `gc`  - Toggles the region using linewise comment
